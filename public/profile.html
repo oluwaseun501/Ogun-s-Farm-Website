@@ -140,7 +140,7 @@
               
         background-image: url(images/background.png);
          position: relative;        
-        height: 3000px;
+        height: 1200px;
         width: 30%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -246,6 +246,34 @@
         align-items: center;
         display: none;
       }
+
+
+
+      
+      
+
+      /* footer */
+      footer p {
+        font-style: italic;
+      }
+       
+      .footerUl li a {
+        text-decoration: none;
+        color: green;
+      }
+      .footerUl li {
+        list-style-type: none;
+        font-size: 15px;
+        
+        }
+           .footerUl li a:hover {
+            text-decoration: underline;
+            transition: all 3s;
+            
+           }
+
+
+       
     </style>
 
       
@@ -278,20 +306,21 @@
 
 
                     </button>
-                    <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
+                        <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
                         <ul class="navbar-nav d-flex gap-4 ms-lg-0 ms-xl-5 gap-xl-5  justify-content-lg-center align-items-lg-center p-3 " 
-                        class="ul_nav" style="background-color:#f5f5f5f3; min-width: 300px; height: auto; margin-top: -10px;  position: absolute;" >
+                        class="ul_nav" style="background-color:#f5f5f5;  min-width: 300px; height: auto; margin-top: -10px;  position: absolute; z-index: 2000;" >
                             <li><a href="index.html" target="_blank"  class="">Home</a></li>
                             <li><a href="dashboard.html" class="" >Dashboard</a></li>
                             <li><a href="product.html" class="">Products</a></li>
-                            <li><a href="#" class="active">Profile</a></li>
+                            <li><a href="#" class=" active">Profile</a></li>
                             <li><a href="faQ.html" class="">FAQ</a></li>
-                            <button class="btn btn btn-dark text-white myNewbtn"><a href="login.html"  id="logOut">Log Out</a></button>
-                            <!-- <li><a href="#" class="btn btn-dark fst-normal ms-lg-4 text-white firstbtn">Login</a></li> -->
+                            <button class="btn btn btn-dark text-white myNewbtn"><a href=""  id="logOut">Log Out</a></button>
+                        
                         </ul>
 
                        
                     </div>
+
 
 
                 </nav>
@@ -336,13 +365,7 @@
     <div class="box2 w-75 position-relative d-flex flex-column ms-sm-5" style="background-color: #f5f5f5;">
 
 
-<!--      
-<h2>Welcome, </h2>
 
-<div class="user-info">
-  <p>Email: <span id="dashEmail"></span></p>
-  <p>Account created: <span id="dashDate"></span></p>
-</div> -->
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">My Profile</h2>
@@ -414,6 +437,62 @@
 
 
 
+      
+           <footer class="" style="margin-top: 300px;">
+        
+          <div class="container shadow-md shadow-lg p-5 d-lg-flex d-md-flex justify-content-center align-items-center flex-column">
+            <div class="row">
+
+              <div class="col d-flex gap-5 flex-sm-wrap ">
+                <div class="box6 ">
+                  <p class="footertext" style="max-width: 200px;"><b>Ogun's Farm -</b> Sustainable agiculture you can trust. Based in Nigeria</p>
+                </div >
+                <div class="box6 d-flex flex-column justify-content-center align-content-center">
+                  <p>You can Visit:</p>
+                  <ul class="footerUl">
+                     <li><a href="index.html" class="ms-lg-2">Home</a></li>
+                            <li><a href="index.html" class="ms-lg-2" >About</a></li>
+                            <li><a href="index.html" class="ms-lg-2">Products</a></li>
+                            <li><a href="index.html" class="ms-lg-2">Services</a></li>
+                            <li><a href="index.html" class="ms-lg-2">Contact Us</a></li>
+                            <li><a href="signup.html " target="_blank" class="ms-lg-2">Sign Up</a></li>
+                            <li><a href="#" class=" ms-lg-2">Login</a></li>
+                  </ul>
+
+
+                </div>
+                <div class="box6 ">
+                  <p class="text-center">Contact Us:</p>
+                  <ul class="footerUl">
+                     <li><a href="" class="ms-lg-2">Phone Number</a></li>
+                            <li><a href="" class="ms-lg-2" >Whatsapp</a></li>
+                            <li><a href="" class="ms-lg-2">Email</a></li>
+                        
+                            
+                  </ul>
+
+                </div>
+                <div class="box6">
+                  <p class="text-center">Social Media:</p>
+                  <ul class="footerUl">
+                     <li><a href="" class=" ms-lg-2">Facebook</a></li>
+                            <li><a href="" class="ms-lg-2" >Tiktok</a></li>
+                            <li><a href="" class="ms-lg-2">Yotube</a></li>
+                        
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="text-center p-3 text-white " style="background-color: green; font-style: italic; font-size: 14px;">
+            <p>&copy; 2025 Ogun's Farm. All right reserved.</p>
+          </div>
+
+        </footer>
       
 
     
