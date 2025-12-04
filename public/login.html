@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogun's Farm | Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="/public/login.css">
+    <style>
+         
+.wrapper {
+  position:absolute;
+  width: 100%;
+  height: 400px;
+  /* overflow: hidden; */
+}
+.myBox div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 5px solid rgba(0, 128, 0, 0.795);
+}
+.myBox div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.myBox div:nth-child(2 ) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.myBox div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.myBox div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.myBox div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.myBox div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.myBox div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.myBox div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.myBox div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.myBox div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+  
+}
+
+/* animation for preload */
+
+      .anime {
+        background-color: black; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        display: none;
+      }
+    </style>
+    
+</head>
+<body>
+
+    <main class="table-responsive">
+      
+     <div id="anime" class="anime">
+              <div style=" width: 100%; height: 1000px; display: flex; justify-content: center; align-items: center;">
+                  <div class="spinner-grow text-primary" ></div>
+                 <div class="spinner-grow text-warning" ></div>
+                <div class="spinner-grow text-danger" ></div>
+                </div>
+          
+       
+            
+            
+          
+     </div>
+      
+        <header style="background-color: green; height: 100px;" class="shadow">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg p-1  p-sm-0 shadow gap-5 d-flex justify-content-around" style="background-color: #f5f5f5; border-radius: 60px; height: 70px;">
+                    <a href="#" class="navbar-brand ms-lg-3"><img src="/logo.png" alt="Ogun's farm Logo" style="width: 80px;"></a>
+                    <button class="bg-transparent border-1 d-lg-none" data-bs-target="#nav" data-bs-toggle="collapse" aria-controls="nav" aria-label="Expand Navigation">
+                <img src="/Untitled-removebg-preview(4).png" alt=""style="width: 30px;">
+
+
+                    </button>
+                    <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
+                        <ul class="navbar-nav d-flex gap-4 ms-lg-0 ms-xl-5 gap-xl-5  justify-content-lg-center align-items-lg-center p-3 " 
+                        class="ul_nav" style="background-color:#f5f5f5f3; min-width: 300px; height: auto; margin-top: -10px;  position: absolute;" >
+                            <li><a href="/public/index.html" target="_blank"  class="">Home</a></li>
+                            <li><a href="/public/index.html" class="" >About</a></li>
+                            <li><a href="/public/index.html" class="">Products</a></li>
+                            <li><a href="/public/index.html" class="">Services</a></li>
+                            <li><a href="/public/index.html" class="">Contact Us</a></li>
+                            <li><a href="/public/signup.html" target="_blank"  class="">Sign Up</a></li>
+                            <li><a href="#" class="btn btn-dark fst-normal ms-lg-4 text-white firstbtn">Login</a></li>
+                        </ul>
+
+                       
+                    </div>
+
+
+                </nav>
+                
+
+
+            </div>
+        </header>
+
+
+          <section>
+            <div class="container mt-5">
+                <div class="row" >
+                    <div class="col d-lg-flex d-md-flex gap-0  flex-sm-wrap ">
+                        <div class="box1 mt-lg-5 mt-xl-5 mt-2 shadow p-3 p-lg-4 p-xl-4 p-md-4 w-50">
+                            <h3>Sign In to your Account</h3>
+                            <p class="text-sm-center">Lets us Grow Together, Let us Earn Together</p>
+
+                        </div>
+                        <div class="box2 mt-lg-5 mt-xl-5 mt-2 shadow p-3 p-lg-4 p-xl-4 p-md-4 w-50">
+                           
+                            <h2 class="text-start mb-4 mt-5" style="font-weight: 600;">Hello, Welcome back</h2>
+                            <form action="">
+                                <p style="font-size: 14px; width: 100%;">Login to manage your investment</p>
+                                <div id="warning" class="text-danger"></div>
+                                <div id="warning2" class="text-danger"></div>
+                                <div id="warning3" class="text-danger"></div>
+                                <input type="email" placeholder="Email address" class="form-control mb-4 " id="email">
+                                  
+                                <div class="input-group mb-2">
+                                 <input type="password" class="form-control " id="password" required placeholder="Enter your password">
+                                   <span class="input-group-text" id="togglePassword">
+                                    <i class="bi bi-eye text-dark" ></i>
+                               </span>
+                                   </div>
+                                <!-- <input type="password" placeholder="password" required class="form-control mb-2" id="password"> -->
+                                <p class="text-end lastform mt-2" > <a href="#">Forgot your password?</a></p>
+                                <br>
+                                <button type="button" class="btn btn-lg w-100 btn22" id="logIn">Log In</button>
+
+                                <p class="text-center lastform mt-2" >You dont have an account <a href="/public/signup.html" target="_blank">Sign Up</a></p>
+
+                               
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+             <div class="wrapper">
+                            <div class="myBox">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                        </div>
+
+
+
+           <footer class="" style="margin-top: 300px;">
+        
+          <div class="container shadow-md shadow-lg p-5 d-lg-flex d-md-flex justify-content-center align-items-center flex-column">
+            <div class="row">
+
+              <div class="col d-flex gap-5 flex-sm-wrap ">
+                <div class="box6 ">
+                  <p class="footertext" style="max-width: 200px;"><b>Ogun's Farm -</b> Sustainable agiculture you can trust. Based in Nigeria</p>
+                </div >
+                <div class="box6 d-flex flex-column justify-content-center align-content-center">
+                  <p>You can Visit:</p>
+                  <ul class="footerUl">
+                     <li><a href="/public/index.html" class="ms-lg-2">Home</a></li>
+                            <li><a href="/public/index.html" class="ms-lg-2" >About</a></li>
+                            <li><a href="/public/index.html" class="ms-lg-2">Products</a></li>
+                            <li><a href="/public/index.html" class="ms-lg-2">Services</a></li>
+                            <li><a href="/public/index.html" class="ms-lg-2">Contact Us</a></li>
+                            <li><a href="/public/signup.html " target="_blank" class="ms-lg-2">Sign Up</a></li>
+                            <li><a href="#" class=" ms-lg-2">Login</a></li>
+                  </ul>
+
+
+                </div>
+                <div class="box6 ">
+                  <p class="text-center">Contact Us:</p>
+                  <ul class="footerUl">
+                     <li><a href="" class="ms-lg-2">Phone Number</a></li>
+                            <li><a href="" class="ms-lg-2" >Whatsapp</a></li>
+                            <li><a href="" class="ms-lg-2">Email</a></li>
+                        
+                            
+                  </ul>
+
+                </div>
+                <div class="box6">
+                  <p class="text-center">Social Media:</p>
+                  <ul class="footerUl">
+                     <li><a href="" class=" ms-lg-2">Facebook</a></li>
+                            <li><a href="" class="ms-lg-2" >Tiktok</a></li>
+                            <li><a href="" class="ms-lg-2">Yotube</a></li>
+                        
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="text-center p-3 text-white " style="background-color: green; font-style: italic; font-size: 14px;">
+            <p>&copy; 2025 Ogun's Farm. All right reserved.</p>
+          </div>
+
+        </footer>
+      
+
+    </main>
+        
+
+
+
+
+
+    <a href="/public/dashboard.html"></a>
+    
+    <script src="/public/login.js"  type="module">
+
+    </script>
+</body>
+</html>

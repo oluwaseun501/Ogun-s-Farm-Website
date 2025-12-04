@@ -1,0 +1,105 @@
+
+    body {
+        font-family: 'Segoe UI';
+        background-color: #f5f5f5;
+    }
+    nav #nav ul li a {
+        font-weight: 600;
+        text-decoration: none;
+        color: green;
+    }
+     nav #nav ul li .active {
+        color: black;
+     }
+      nav #nav ul li:hover {
+        /* text-decoration: underline; */
+        transition: all 0.5s;
+        scale: 1.05;
+      }
+       nav #nav ul .firstbtn:hover {
+        
+        background-color: green;
+        transition: all 1s;
+        scale: 1.05;
+        border: green;
+      }
+
+/* section  */
+      .box1 {
+        background-image: url(/background.png);
+          
+        height: 880px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 h3 {
+        color: white;
+        font-weight: 600;
+        max-width: 300px;
+        font-size: 35px;
+        margin-left: 23px;
+      }
+      .box1 p {
+        color: white;
+        font-size: 14px;
+        /* margin-left: ; */
+        
+      }
+      .box2 {
+        width: 50%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        
+      }
+         .form-control {
+            height: 50px;
+            
+            
+
+         }
+         .btn22 {
+            background-color: green;
+            color: white;
+            font-size: 18px;
+         }
+         .lastform {
+            font-size: 14px;
+         }
+         .lastform a{
+            font-style: italic;
+            color: green;
+
+         }
+         
+
+
+
+
+
+      /* footer */
+        footer p {
+        font-style: italic;
+      }
+       
+      .footerUl li a {
+        text-decoration: none;
+        color: green;
+      }
+      .footerUl li {
+        list-style-type: none;
+        font-size: 15px;
+        
+        }
+           .footerUl li a:hover {
+            text-decoration: underline;
+            transition: all 3s;
+            
+           }

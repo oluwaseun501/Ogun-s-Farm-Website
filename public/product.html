@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogun's Farm | Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+
+             /* animation */
+        .wrapper {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.myBox div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 5px solid rgba(222, 233, 222, 0.795);
+}
+.myBox div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.myBox div:nth-child(2 ) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.myBox div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.myBox div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.myBox div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.myBox div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.myBox div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.myBox div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.myBox div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.myBox div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+        /* navbar styling */
+                 body {
+        font-family: 'Segoe UI';
+        background-color: #f5f5f5;
+         
+            margin: 0;
+            padding: 0;
+    }
+    nav #nav ul li a {
+        font-weight: 600;
+        text-decoration: none;
+        color: green;
+    }
+     nav #nav ul li .active {
+        color: black;
+     }
+      nav #nav ul li:hover {
+        /* text-decoration: underline; */
+        transition: all 0.5s;
+        scale: 1.05;
+      }
+       nav #nav ul .firstbtn:hover {
+        
+        background-color: green;
+        transition: all 1s;
+        scale: 1.05;
+        border: green;
+      }
+
+
+      
+        /* style for side bar */
+        .box1 {
+              
+        background-image: url(/background.png);
+         position: relative;        
+         height: 3000px;
+        width: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border-radius: 10px; */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+      }
+      .dashboardMenu {
+        width: 100%;
+        margin-top: 30px;
+       
+      }
+       .dashboardMenu li  {
+        list-style-type: none;
+        padding: 20px;
+    
+        min-width:300px ;
+        /* background-color: red; */
+        margin: 5px;
+        border: 1px solid rgba(102, 93, 93, 0.295);
+        border-radius: 10px;
+       }
+       .dashboardMenu li:hover {
+        background-color: grey;
+        transition: all 2s;
+      
+      
+        
+       }
+      .dashboardMenu li a {
+        text-decoration: none;
+         color: white;
+         letter-spacing: 1px;
+         font-weight: 500;
+         font-size: 17px;
+           cursor:pointer;
+
+
+
+      }
+      .dashboardMenu li a:hover {
+          color: black;
+      }
+      .box2 {
+        width: 70%;
+        /* position: relative; */
+      }
+
+      /* Producs */
+
+      .prod1 {
+        
+        width: 260px;
+       height: 400px;
+       border: 1px solid green;
+       display: flex;
+       flex-direction: column;
+        justify-content:start ;
+       align-items:center;
+       border-radius: 10px;
+      
+
+      }
+      
+      .prod1 img {
+        padding: 5px;
+        width: 250px;
+        border-radius: 10px;
+      }
+      .prod1 .prodText {
+        
+        color:green;
+        font-size: 20px;
+        
+      }
+      .prod1 .prodBtn button{
+        background-color:#daa520;
+        font-size: 18px;
+      }
+
+      /* animation for preload */
+
+      .anime {
+        background-color: black; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        display: none;
+      }
+
+
+
+      
+        
+    </style>
+</head>
+<body>
+
+    <main>
+         <div id="anime" class="anime">
+              <div style=" width: 100%; height: 1000px; display: flex; justify-content: center; align-items: center;">
+                  <div class="spinner-grow text-primary" ></div>
+                 <div class="spinner-grow text-warning" ></div>
+                <div class="spinner-grow text-danger" ></div>
+                </div>
+          
+       
+            
+            
+          
+     </div>
+               <header style="background-color: green; height: 100px;" class="shadow">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg p-1  p-sm-0 shadow gap-5 d-flex justify-content-around" style="background-color: #f5f5f5; border-radius: 60px; height: 70px;">
+                    <a href="#" class="navbar-brand ms-lg-3"><img src="/logo.png" alt="Ogun's farm Logo" style="width: 80px;"></a>
+                    <button class="bg-transparent border-1 d-lg-none" data-bs-target="#nav" data-bs-toggle="collapse" aria-controls="nav" aria-label="Expand Navigation">
+                <img src="/Untitled-removebg-preview(4).png" alt=""style="width: 30px;">
+
+
+                    </button>
+                    <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
+                        <ul class="navbar-nav d-flex gap-4 ms-lg-0 ms-xl-5 gap-xl-5  justify-content-lg-center align-items-lg-center p-3 " 
+                        class="ul_nav" style="background-color:#f5f5f5f3; min-width: 300px; height: auto; margin-top: -10px;  position: absolute;" >
+                            <li><a href="/public/index.html" target="_blank"  class="">Home</a></li>
+                            <li><a href="./dashboard.html" class="" >Dashboard</a></li>
+                            <li><a href="" class="active">Products</a></li>
+                            <li><a href="" class="">Profile</a></li>
+                            <li><a href="" class="">FAQ</a></li>
+                            <li><a href="./login.html" target="_blank"  class="">Log Out</a></li>
+                            <!-- <li><a href="#" class="btn btn-dark fst-normal ms-lg-4 text-white firstbtn">Login</a></li> -->
+                        </ul>
+
+                       
+                    </div>
+
+
+                </nav>
+                
+
+
+            </div>
+        </header>
+        <div class="d-lg-flex gap-0 position-relative">
+
+           <div class="box1 w-25 ps-md-0 d-sm-none d-lg-grid">
+    <div class=" w-100">
+        <ul class="dashboardMenu w-75">
+            <li class="w-100"><a href="./dashboard.html">Dashboard</a></li>
+            <li class="w-100"><a href="">Products</a></li>
+            <li class="w-100"><a href="">Profile</a></li>
+            <li class="w-100"><a href="">Chat With Us</a></li>
+            <!-- <li><a href="">Log Out</a></li> -->
+        </ul>
+
+
+
+            
+             <div class="wrapper">
+                            <div class="myBox">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                        </div>
+
+
+    </div>
+    </div>
+
+
+    <div class="box2 w-75 position-relative d-flex flex-column" style="background-color: #f5f5f5;">
+        <div class="d-flex justify-content-center align-items-center">
+
+            <input class="w-50 mt-3 form-control" type="search" placeholder="Enter product name" id="inputItem" >
+            <button type="button" onclick="mySearchProduct()" class="mt-3 btn btn-md text-white" style="background-color: green;" >Search</button>
+        </div>
+
+         <div class="container">
+        
+                <h2 class="text-center mt-4">Our Farm Products</h2>
+
+                <div class="container">
+                  
+                    
+                           
+                            <div id="display" class="row  mt-5 m-2 " ></div>
+                          
+                    </div>
+                   
+                
+
+                   
+            
+                    </div>
+                
+
+
+
+        
+         </div>
+     
+  
+
+
+    
+
+</div>
+</div>
+
+    </main>
+
+
+
+
+    <script src="/public/product.js"></script>
+</body>
+</html>

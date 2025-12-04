@@ -1,0 +1,230 @@
+/*  
+ * {
+   margin: 0;
+        padding: 0;
+
+ } */
+ body {
+        font-family: 'Segoe UI';
+        background-color: #f5f5f5; 
+        animation: spin 5s linear infinite;
+    }
+  
+   
+  
+ 
+    nav #nav ul li a {
+        font-weight: 600;
+        text-decoration: none;
+        color: green;
+    }
+     nav #nav ul li .active {
+        color: black;
+     }
+      nav #nav ul li:hover {
+        /* text-decoration: underline; */
+        transition: all 0.5s;
+        scale: 1.05;
+      }
+       nav #nav ul .firstbtn:hover {
+        
+        background-color: green;
+        transition: all 1s;
+        scale: 1.05;
+        border: green;
+      }
+       
+
+      .header1 {
+        background-image: url(/headee2.jpg);
+        height: 750px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .header1 h2 {
+         color: #f5f5f5;
+         font-weight: 700;
+         letter-spacing: 2px;
+         font-size: 50px;
+         text-align: center;
+         max-width: 600px;
+
+      }
+      .header1 p {
+        color: #f5f5f5;
+        text-align: center;
+        max-width: 650px;
+        font-size: 18px;
+      }
+      .header1 button:hover {
+        background-color: green;
+        transition: all 1s;
+        scale: 1.05;
+        border: green;
+      }
+      .box {
+        max-width: 600px;
+      }
+      .box p {
+        /* max-width: px; */
+        font-size: 17px;
+      }
+      .box h2 {
+        font-weight: 600;
+        color: green;
+        max-width: 300px;
+      }
+      .box h3 {
+        
+        color: green;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .box .lastText {
+        font-style: italic;
+        font-size: 16px;
+        color: green;
+      }
+      .box2 {
+        max-width: 500px;
+      }
+      .header3 {
+        background-image: url(/background.png);
+       
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .box3 {
+        color: #f5f5f5;
+        
+
+      }
+      .box3 h3 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .box3 p {
+        font-size: 16px;
+        max-width: 280px;
+        font-weight: lighter;
+        
+      }
+      .card-body {
+        width: 300px;
+       
+      }
+      .card-footer {
+        width: 300px;
+      }
+      .card-img {
+        /* background-color:#f5f5f5; */
+      
+        width: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        
+      
+       
+
+      }
+      
+      .box3 img {
+        padding: 2px;
+        margin-top: 20px;
+        width: 25%;
+        border-radius: 10px;
+       
+      }
+         .firstbtn:hover {
+        
+        background-color: green;
+        transition: all 1s;
+        scale: 1.05;
+        border: green;
+      }
+
+      /* service section */
+      .header4 h3 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .box4 {
+        
+        min-width: 200px;
+        min-height: 200px;
+        
+        background-color: green;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+      .box4 h3 {
+        max-width: 180px;
+        font-size: 25px;
+        color:#f5f5f5;
+        font-weight: 500;
+      }
+
+      .box4:hover {
+        scale: 1.05;
+        transition: all 1s;
+      }
+
+      .header5 {
+        margin-top: 20px;
+      background-image: url(/background.png);
+       
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box5 {
+        padding: 10px;
+        min-width: 150px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .box5 img {
+        width: 50px;
+      }
+      .box5 p {
+        color: green;
+      }
+
+      /* footer */
+      footer p {
+        font-style: italic;
+      }
+       
+      .footerUl li a {
+        text-decoration: none;
+        color: green;
+      }
+      .footerUl li {
+        list-style-type: none;
+        font-size: 15px;
+        
+        }
+           .footerUl li a:hover {
+            text-decoration: underline;
+            transition: all 3s;
+            
+           }
+
+
+       
