@@ -174,7 +174,7 @@
     set(userRef, userObj)
     .then (() => {
         console.log('user info saved now')
-         location.href = "/public/login.html";
+         location.href = "login.html";
        
 
     })

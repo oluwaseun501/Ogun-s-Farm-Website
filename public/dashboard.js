@@ -37,7 +37,7 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     // user is not logged in → redirect to login page
-    location.href = "/public/login.html";
+    location.href = "login.html";
   }
 });
 
@@ -62,7 +62,7 @@ document.getElementById("logOut").addEventListener("click", () => {
 
                 }, 2000);
          
-      location.href = "/public/login.html";
+      location.href = "login.html";
     })
     .catch((error) => {
       console.log("Logout error:", error);

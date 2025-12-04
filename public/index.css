@@ -36,7 +36,7 @@
        
 
       .header1 {
-        background-image: url(/headee2.jpg);
+        background-image: url(images/headee2.jpg);
         height: 750px;
         width: 100%;
         background-repeat: no-repeat;
@@ -91,7 +91,7 @@
         max-width: 500px;
       }
       .header3 {
-        background-image: url(/background.png);
+        background-image: url(images/background.png);
        
         height: auto;
         width: 100%;
@@ -183,7 +183,7 @@
 
       .header5 {
         margin-top: 20px;
-      background-image: url(/background.png);
+      background-image: url(images/background.png);
        
         height: 200px;
         width: 100%;

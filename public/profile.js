@@ -38,7 +38,7 @@ onAuthStateChanged(auth, (user) => {
     });
 
   } else {
-    location.href = "/public/login.html"; 
+    location.href = "login.html"; 
   }
 });
 

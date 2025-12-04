@@ -121,7 +121,7 @@ signInWithEmailAndPassword(auth, email, password)
     console.log(user)
     // alert('login Succesful')
     console.log('you login succesfully')
-    location.href = "/public/dashboard.html";
+    location.href = "dashboard.html";
        
 
   })

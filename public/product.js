@@ -1,97 +1,97 @@
 let products = [
 {
     id: 0,
-    image: '/1.jpg',
+    image: 'images/1.jpg',
     name:'Riped Banana',
     price:"3500"
 },
 {
     id: 1,
-    image: '/2.jpg',
+    image: 'images/2.jpg',
     name:'Unripe Banana',
     price:"4000"
 },
 {
     id: 2,
-    image: '/3.jpg',
+    image: 'images/3.jpg',
     name:'Cocoa',
     price:"30000"
 },
 {
     id: 3,
-    image: '/4.jpg',
+    image: 'images/4.jpg',
     name:'Original Palm Oil',
     price:"10000"
 },
 {
     id: 4,
-    image: '/5.jpg',
+    image: 'images/5.jpg',
     name:'Palm Kernel',
     price:"40000"
 },
 {
     id: 5,
-    image: '/6.jpg',
+    image: 'images/6.jpg',
     name:'Bundle of Sugar Cane',
     price:"20000"
 },
 {
     id: 6,
-    image: '/7.jpg',
+    image: 'images/7.jpg',
     name:'Water Melon/1 Ton',
     price:"200000"
 },
 {
     id: 7,
-    image: '/8.jpg',
+    image: 'images/8.jpg',
     name:'Palm Oil/5Litres',
     price:"10000"
 },
 {
     id: 8,
-    image: '/9.jpg',
+    image: 'images/9.jpg',
     name:'Piglet',
     price:"15000"
 },
 {
     id: 9,
-    image: '/pig1.jpg',
+    image: 'images/pig1.jpg',
     name:'Pig',
     price:"100000"
 },
 {
     id: 10,
-    image: '/11.jpg',
+    image: 'images/11.jpg',
     name:'Cassava/1hectare',
     price:"300000"
 },
 {
     id: 11,
-    image: '/18.jpg',
+    image: 'images/18.jpg',
     name:'Coco yam/1 hectare',
     price:"50000"
 },
 {
     id: 12,
-    image: '/16.jpg',
+    image: 'images/16.jpg',
     name:'Original Palm Oil',
     price:"100000"
 },
 {
     id: 13,
-    image: '/19.jpg',
+    image: 'images/19.jpg',
     name:'Pawpaw/1ton',
     price:"20000"
 },
 {
     id: 14,
-    image: '/20.jpg',
+    image: 'images/20.jpg',
     name:'Maize',
     price:"100000"
 },
 {
     id: 14,
-    image: '/17.jpg',
+    image: 'images/17.jpg',
     name:'Palm Kernel seed',
     price:"150000"
 }
