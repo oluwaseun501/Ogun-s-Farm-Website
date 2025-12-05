@@ -98,18 +98,24 @@
 
 </head>
 
-<body style="background-color:#f5f5f5;">
+<body style="background-color:#f5f5f5; overflow-x: hidden;" class="">
 
     <main class="" style="overflow:hidden">
         <header style="background-color: green; height: 100px;" class="shadow">
             <div class="container">
                 <nav class="navbar navbar-expand-lg p-1  p-sm-0 shadow gap-5 d-flex justify-content-around" style="background-color: #f5f5f5; border-radius: 60px; height: 70px;">
                     <a href="#" class="navbar-brand ms-lg-3"><img src="images/logo.png" alt="Ogun's farm Logo" style="width: 80px;"></a>
-                    <button class="bg-transparent border-1 d-lg-none" data-bs-target="#nav" data-bs-toggle="collapse" aria-controls="nav" aria-label="Expand Navigation">
-                <img src="images/Untitled-removebg-preview(4).png" alt=""style="width: 30px;">
+                              <button class="navbar-toggler bg-transparent" 
+                           type="button"
+                                 data-bs-toggle="collapse" 
+                               data-bs-target="#nav" 
+                            aria-controls="nav" 
+                             aria-expanded="false" 
+                            aria-label="Toggle navigation">
+                <img src="images/Untitled-removebg-preview(4).png" alt="" style="width: 30px;">
+            </button>
 
-
-                    </button>
+              
                     <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
                         <ul class="navbar-nav d-flex gap-4 ms-lg-0 ms-xl-5 gap-xl-5  justify-content-lg-center align-items-lg-center p-3 " 
                         class="ul_nav" style="background-color:#f5f5f5f3; min-width: 300px; height: auto; margin-top: -10px;  position: absolute;" >
@@ -119,7 +125,7 @@
                             <li><a href="#services" class=" ">Services</a></li>
                             <li><a href="#contact" class="">Contact Us</a></li>
                             <li><a href="signup.html" class=" ">Sign Up</a></li>
-                            <li><a href="login.html" class="btn btn-dark fst-normal ms-lg-4 text-white firstbtn">Login</a></li>
+                            <li><a href="login.html" class="btn btn-dark fst-normal ms-lg-4 text-white firstbtn w-100">Login</a></li>
                         </ul>
 
                        
@@ -136,10 +142,10 @@
         <section >
             <div class="header1 d-flex flex-column justify-content-center align-items-center">
               <h2 class="shadow">We <span class="auto-type shadow" style="color: rgb(216, 216, 19);"></span></h2>
-              <p  class="shadow fw-normal">Ogun's Farm specializes in palm oil processing, palm kernel, cassava, potatoes, piggery, maize and more. <br>
+              <p  class="shadow p-4" style="font-size: 20px; font-weight:550 ;">Ogun's Farm specializes in palm oil processing, palm kernel, cassava, potatoes, piggery, maize and more. <br>
                  We allow people to invest in our farm projects and earn returns through safe and transport agricultural partnership
             </p>
-            <button class="btn btn-dark btn-lg "><a href="signup.html" class="text-decoration-none text-white">Invest Now</a></button>
+            <button class="btn btn-dark btn-lg  "><a href="signup.html" class="text-decoration-none text-white">Invest Now</a></button>
             
            
             </div>
@@ -207,7 +213,7 @@
                     
                       Fruits (e.g. watermelon),
 
-                      Root Crops (e.g. cassava, potatoes)</p>
+                      Root Crops (e.g. cassava)</p>
                   </div>
                   <button class="btn btn-dark btn-lg w-sm-25 firstbtn mb-3"><a href="login.html" class="text-decoration-none text-white">See More</a></button>
                   </div>
@@ -219,7 +225,8 @@
                     <h3>Livestock Products</h3>
                   </div>
                   <div class="card-footer">
-                    <p>Poultry (broilers, layers, live chickens), Eggs, Goat meat, Catfish (live or processed)</p>
+                    <p>Poultry (broilers, layers, live chickens), 
+                      Eggs, Goat meat, Catfish (live or processed)</p>
                   </div>
                   <button class="btn btn-dark btn-lg w-sm-25 firstbtn mb-3"><a href="login.html" class="text-decoration-none text-white">See More</a></button>
 
@@ -244,7 +251,7 @@
                     <h3>Farm Services</h3>
                   </div>
                   <div class="card-footer">
-                    <p>Farm consultation, Training programs, Farm equipment rental, Farm tours, Delivery of farm produce</p>
+                    <p>Farm consultation, Farm equipment rental, Farm tours, Delivery of farm produce</p>
                   </div>
                   <button class="btn btn-dark btn-lg w-sm-25 firstbtn mb-3"><a href="login.html" class="text-decoration-none text-white">See More</a></button>
 
@@ -325,9 +332,9 @@
 
         
 
-        <div id="" class="text-center d-flex justify-content-center align-items-center mb-3 mt-sm-auto mt-md-auto p-sm-4 p-md-4" style="cursor: pointer; position: relative; margin-top: 200px;"  >
+        <!-- <div id="" class="text-center d-flex justify-content-center align-items-center mb-3 mt-sm-auto mt-md-auto p-sm-4 p-md-4" style="cursor: pointer; position: relative; margin-top: 200px;"  >
               <button style="font-size: 20px; background-color: green; width: 40px; height: 40px; border-radius: 50%; "><a href="#">🔺</a></button>
-            </div>
+            </div> -->
         <br>
         <br>
         <div class="wrapper">
@@ -351,7 +358,7 @@
           <div class="container shadow-md shadow-lg p-5 d-lg-flex d-md-flex justify-content-center align-items-center flex-column">
             <div class="row">
 
-              <div class="col d-flex gap-5 flex-sm-wrap ">
+              <div class="col d-lg-flex flex-wrap gap-5 ">
                 <div class="box6 ">
                   <p class="footertext" style="max-width: 200px;"><b>Ogun's Farm -</b> Sustainable agiculture you can trust. Based in Nigeria</p>
                 </div >
@@ -370,7 +377,7 @@
 
                 </div>
                 <div class="box6 ">
-                  <p class="text-center">Contact Us:</p>
+                  <p class="text-start">Contact Us:</p>
                   <ul class="footerUl">
                      <li><a href="" class="ms-lg-2">Phone Number</a></li>
                             <li><a href="" class="ms-lg-2" >Whatsapp</a></li>
@@ -381,7 +388,7 @@
 
                 </div>
                 <div class="box6">
-                  <p class="text-center">Social Media:</p>
+                  <p class="text-start">Social Media:</p>
                   <ul class="footerUl">
                      <li><a href="" class=" ms-lg-2">Facebook</a></li>
                             <li><a href="" class="ms-lg-2" >Tiktok</a></li>
