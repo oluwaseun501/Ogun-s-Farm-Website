@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,7 +143,7 @@
               
         background-image: url(images/background.png);
          position: relative;        
-        height: 3400px;
+        height: 1390px;
         min-width: 25%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -248,8 +251,6 @@
       }
 
 
-
-
       
       
 
@@ -274,17 +275,53 @@
            }
 
 
+
+           /* cart item style section */
+
+            .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .qty-btn {
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            
+        }
+        .delete-btn {
+            margin-right:10px ;
+            background: red;
+            padding: 6px 14px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
        
     </style>
 
       
         
-    </style>
 </head>
 <body>
 
-    <main class=" " style="background-color: #f5f5f5;" class="p-0 m-0">
-             
+    <main style="background-color: #f5f5f5;" class="p-0 m-0"> 
+               <header style="background-color: green; height: 100px;" class="shadow">
 
 
                 <div id="anime" class="anime">
@@ -294,26 +331,17 @@
                 <div class="spinner-grow text-danger" ></div>
                 </div>
           
-       <button class="navbar-toggler bg-transparent border-1" 
-        type="button"
-        data-bs-toggle="collapse" 
-        data-bs-target="#nav" 
-        aria-controls="nav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-    <img src="images/Untitled-removebg-preview(4).png" alt="" style="width: 30px;">
-</button>
-
+       
             
             
           
      </div>
-     <header style="background-color: green; height: 100px;" class="shadow">
             <div class="container">
                 <nav class="navbar navbar-expand-lg p-1  p-sm-0 shadow gap-5 d-flex justify-content-around" style="background-color: #f5f5f5; border-radius: 60px; height: 70px;">
                     <a href="#" class="navbar-brand ms-lg-3"><img src="images/logo.png" alt="Ogun's farm Logo" style="width: 80px;"></a>
-                   
-                            <button class="navbar-toggler bg-transparent" 
+                             
+                    
+                    <button class="navbar-toggler bg-transparent" 
                            type="button"
                                  data-bs-toggle="collapse" 
                                data-bs-target="#nav" 
@@ -323,18 +351,15 @@
                 <img src="images/Untitled-removebg-preview(4).png" alt="" style="width: 30px;">
             </button>
 
-                        
-                
-
-
-                    <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
+                    
+                        <div class="collapse navbar-collapse " id="nav" style="padding: 20px;"  >
                         <ul class="navbar-nav d-flex gap-4 ms-lg-0 ms-xl-5 gap-xl-5  justify-content-lg-center align-items-lg-center p-3 " 
                         class="ul_nav" style="background-color:#f5f5f5;  min-width: 300px; height: auto; margin-top: -10px;  position: absolute; z-index: 2000;" >
                             <li><a href="index.html" target="_blank"  class="">Home</a></li>
-                            <li><a href="#" class="active" >Dashboard</a></li>
+                            <li><a href="dashboard.html" class="" >Dashboard</a></li>
                             <li><a href="product.html" class="">Products</a></li>
                             <li><a href="profile.html" class="">Profile</a></li>
-                            <li><a href="faQ.html" class="">FAQ</a></li>
+                            <li><a href="#" class="active">FAQ</a></li>
                             <button class="btn btn btn-dark text-white myNewbtn"><a href=""  id="logOut">Log Out</a></button>
 
                              <li class="navbar-text"><a href="cart.html"><img style="width: 40px; background-color:#f5f5f5; padding: 8px; border-radius: 50%;" src="images/cart icon.png" alt="cart Image"></a></li>
@@ -346,19 +371,19 @@
                     </div>
 
 
+
                 </nav>
                 
 
 
             </div>
-
         </header>
         <div class="d-lg-flex gap-0 position-relative">
 
-           <div class="box1 w-auto ps-md-0 d-none d-lg-block d-xl-block" >
+           <div class="box1 w-auto ps-md-0 d-none d-lg-block d-xl-block ">
     <div class=" w-100">
         <ul class="dashboardMenu w-75">
-            <li class="w-100"><a href="#">Dashboard</a></li>
+            <li class="w-100"><a href="dashboard.html">Dashboard</a></li>
             <li class="w-100"><a href="product.html">Products</a></li>
             <li class="w-100"><a href="profile.html">Profile</a></li>
             <li class="w-100"><a href="">Chat With Us</a></li>
@@ -386,161 +411,43 @@
     </div>
 
 
-    <div class="box2 w-auto d-flex flex-column ms-sm-5 " >
+    <div class="box2 w-auto position-relative d-flex flex-column ms-sm-5" >
 
 
-        <div class="container mt-5  border border-4 shadow" style="background-color: #8ce99ad7; border-radius: 30px;">
-            <div class="col d-lg-flex d-md-flex justify-content-between align-items-center flex-wrap ms-sm-4 ">
 
-                <div class="box3 w-75 p-5">
-                    <h2>Welcome, <span id="myName" class="fw-bold"></span></h2>
-                    <marquee behavior="scroll" direction="left">Your agricultural investment journey starts here.</marquee>
-                    <p></p>
-                </div>
-                <div class="box4 w-auto">
-                    <img src="images/cartoon1.png" alt="" style="width: 300px; ">
-                </div>
-                
-            </div>
+
+<div class="container mt-5">
+
+                     <h2 class="text-center mb-4">Shopping Cart</h2>
+
+    <div id="cartItems" class=" shadow">
+    </div>
+
+    <div class="shadow h4 w-50 mt-5 p-3">
+        <p >Order Summary:</p>
+        <p style="border: 0.5px solid rgba(0, 0, 0, 0.233);" class="mb-5"></p>
+        <div class="d-flex justify-content-between">
+
+            <h3 style="font-size: 20px;">Total(N): </h3>
+            <span id="totalAmount" style="font-weight: bold;">0</span>
         </div>
-      
-        <div class="header2 container ">
-              <h3 class="mt-5 mb-5 text-start" id="services">Overview <i style="font-size: 14px;">Investors interest</i></h3>
-              <div class=" d-flex  gap-3 flex-md-wrap table-responsive " style="scrollbar-width:thin; scroll-behavior: smooth;" >
-                <div class="cont1 ms-2 d-flex flex-column" style="background-color: #daa520;">
-                  <h3>62%</h3>
-                  <p><i>Palm Oil</i></p>
 
-                </div>
-                <div class="cont1  d-flex flex-column " style="background-color: #2e7d32;">
-                 <h3 class="">42%</h3>
-                  <p><i>Cassava</i></p>
 
-                </div>
-                <div class="cont1 d-flex flex-column" style="background-color: #333333;">
-                  <h3>55%</h3>
-                  <p><i>Pig Farming</i></p>
+    </div>
 
+ 
+    
                 </div>
-                <div class="cont1 d-flex flex-column" style="background-color: #daa520;">
-                  <h3>41%</h3>
-                  <p><i>Maize</i></p>
+                    </div>
 
-                </div>
-                <div class="cont1 d-flex flex-column" style="background-color: #2e7d32;">
-                 <h3>30%</h3>
-                  <p><i>Water Melon</i></p>
-
-                </div>
-                <div class="cont1 d-flex flex-column" style="background-color: #333333;">
-                 <h3>70%</h3>
-                  <p><i>Agriculture</i></p>
-
-                </div>
-              
-            </div>
             </div>
 
+            
+    
 
-        <div class="header3 container ">
-              <h3 class="mt-5 mb-5 text-start" id="services">Land Available <i style="font-size: 14px;">For planting</i></h3>
-              <div class=" d-lg-flex d-xl-flex flex-column gap-3 flex-wrap table-responsive " style="scrollbar-width:thin; scroll-behavior: smooth;" >
-                <div class="cont2 ms-2 d-lg-flex d-xl-flex flex-wrap shadow border border-4 mb-4 w-auto " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/land 6.jpg" alt="" style="max-width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Land Available: 12 hectares</h3>
-                  <p>Status: <i>Ready for planting</i></p>
-                  <p>Location: <i>Ogun State</i></p>
-                  <p>Soil Type: <i>Loamy</i></p>
-                  <p>Best for:<i>Cassava, Maize, Palm Seedling</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
 
-                </div>
-                   <div class="cont2 ms-2 d-lg-flex d-xl-flex flex-wrap shadow border border-4 mb-4 " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/land1.jpg" alt="" style="max-width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Plot A: 5 hectares</h3>
-                  <p>Status: <i>Ready for planting</i></p>
-                  <p>Location: <i>Ogun State</i></p>
-                  <!-- <p>Soil Type: <i>Loamy</i></p> -->
-                  <p>Best for:<i>Water Melon</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
 
-                </div>
-                   <div class="cont2 ms-2 d-lg-flex d-xl-flex flex-wrap shadow border border-4 mb-4 " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/land2.jpg" alt="" style="max-width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Plot B: 3 hectares</h3>
-                  <p>Status: <i>Ready for planting</i></p>
-                  <p>Location: <i>Oyo State</i></p>
-                  <!-- <p>Soil Type: <i>Loamy</i></p> -->
-                  <p>Best for:<i>Maize</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
-
-                </div>
-                  <div class="cont2 ms-2 d-lg-flex d-xl-flex flex-wrap shadow border border-4 mb-4 " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/land 3.jpg" alt="" style="max-width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Plot C: 3 Plots</h3>
-                  <p>Status: <i>Suitable for pig Expansion</i></p>
-                  <p>Location: <i>Oyo State</i></p>
-                  <!-- <p>Soil Type: <i>Loamy</i></p> -->
-                  <p>Best for:<i>Pig rearing or Crop rotation</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
-
-                </div>
-                    <div class="cont2 ms-2 d-lg-flex  d-xl-flex flex-wrap shadow border border-4 mb-4 " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/land4.jpg" alt="" style="width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Plot D: 3 hectares</h3>
-                  <p>Status: <i>Ready for Cocao</i></p>
-                  <p>Location: <i>Ogun State</i></p>
-                  <!-- <p>Soil Type: <i>Loamy</i></p> -->
-                  <p>Best for:<i>Cocoa Planting</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
-
-                </div>
-                   <div class="cont2 ms-2 d-lg-flex d-xl-flex flex-wrap shadow border border-4 mb-4 " style="background-color: #f5f5f5">
-                    <div class="p-4">
-                  <img src="images/palm kernel.jpg" alt="" style="width: 250px; ">
-                  </div>
-                  <div class="p-4">
-                    <h4>Plot E: 5 hectares</h3>
-                  <p>Status: <i>Palm Kernel Plants </i></p>
-                  <p>Location: <i>Oyo State</i></p>
-                  <!-- <p>Soil Type: <i>Loamy</i></p> -->
-                  <p>Best for:<i>Palm Kernel Planting</i></p>
-                      <button class="btn btn-dark btn-lg "><a href="" class="text-decoration-none text-white">Request to Invest</a></button>
-                  </div>
-               
-
-                </div>
-              
-            </div>
-            </div>
-     
-  
-              
+    
            <footer class="" style="margin-top: 300px;">
         
           <div class="container shadow-md shadow-lg p-5 d-lg-flex d-md-flex justify-content-center align-items-center flex-column">
@@ -576,7 +483,7 @@
 
                 </div>
                 <div class="box6">
-                  <p class="text-start">Social Media:</p>
+                  <p class="text-center">Social Media:</p>
                   <ul class="footerUl">
                      <li><a href="" class=" ms-lg-2">Facebook</a></li>
                             <li><a href="" class="ms-lg-2" >Tiktok</a></li>
@@ -591,18 +498,21 @@
             
           </div>
           
-          <div class="text-center p-3 text-white " style="background-color: green; font-style: italic; font-size: 14px;">
+          <div class="text-start p-3 text-white " style="background-color: green; font-style: italic; font-size: 14px;">
             <p>&copy; 2025 Ogun's Farm. All right reserved.</p>
           </div>
 
         </footer>
       
+    
+</div>
+
+               
+
 
     
 
 </div>
-</div>
-
 
 
     </main>
@@ -610,6 +520,7 @@
 
 
 
-    <script src="dashboard.js" type="module"></script>
+       <script src="cart.js"></script>
+   
 </body>
 </html>

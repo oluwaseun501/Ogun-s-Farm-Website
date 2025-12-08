@@ -173,8 +173,8 @@
    
     set(userRef, userObj)
     .then (() => {
-        console.log('user info saved now')
-         location.href = "login.html";
+        alert('You regsiter succesfully')
+         location.href = "dashboard.html";
        
 
     })
@@ -183,7 +183,7 @@
 })
   .catch((error) => {
     console.log(error);
-         console.log("User Info Saved");
+         alert("please input correct information");
     // ..
   });
 
@@ -220,7 +220,7 @@
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
-      location.href = "/public/login.html";
+      location.href = "dashboard.html";
     //  document.getElementById('anime').style.display = "block"
    
 

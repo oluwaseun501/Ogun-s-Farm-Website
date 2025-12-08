@@ -130,6 +130,7 @@ signInWithEmailAndPassword(auth, email, password)
     const errorMessage = error.message;
       console.log(errorCode)
     console.log( errorMessage)
+    alert("Please input correct details") 
     
 
   })

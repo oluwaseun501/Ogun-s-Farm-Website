@@ -104,6 +104,9 @@ let products = [
 
 ];
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
 function mySearchProduct () {
    
 
@@ -119,7 +122,18 @@ function mySearchProduct () {
     })
     
     if(InputProduct == "" ) {
-        alert('Please Input Product')
+
+        
+             document.getElementById('anime').style.display = "block";
+             
+             setTimeout(() => {
+                 
+                 document.getElementById('anime').style.display = "none";
+
+                }, 2000);
+
+        location.href = "product.html";
+
     }
     else {
 
@@ -130,7 +144,7 @@ function mySearchProduct () {
                  
                  document.getElementById('anime').style.display = "none";
 
-                }, 2000);
+                }, 1000);
 
         displayProduct(foundProduct)
         
@@ -155,11 +169,11 @@ const displayProduct = (item) => {
                 
              </div>
              <div class="prodText" >
-             <p style="font-size: 20px; font-weight: bold;">${item.name}</p>
-             <p class="text-center" style="font-size: 18px;">N${item.price}</p>
+             <p style="font-size: 18px; font-weight: bold;">${item.name}</p>
+             <p class="text-center" style="font-size: 16px;">N${item.price}</p>
              </div>
                <div class="prodBtn   w-100">
-                 <button class="btn btn-lg w-100" >Buy now</button>
+                <button class="btn btn-sm w-100" onclick="addToCart(${item.id})">Buy now</button>
              </div>
 
              </div>
@@ -177,6 +191,42 @@ const displayProduct = (item) => {
 
 };
 displayProduct(products);
+
+
+
+
+// add to cart section
+
+function addToCart(id) {
+    let selectedProduct = products.find(item => item.id === id);
+
+    let existing = cart.find(item => item.id === id);
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({...selectedProduct, quantity: 1});
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Show modal instead of alert
+    showModal(selectedProduct);
+}
+
+
+
+function showModal(product) {
+    document.getElementById("modalImg").src = product.image;
+    document.getElementById("modalName").innerText = product.name;
+    document.getElementById("modalPrice").innerText = "N" + product.price;
+
+    document.getElementById("cartModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("cartModal").style.display = "none";
+}
+
 
 
 
