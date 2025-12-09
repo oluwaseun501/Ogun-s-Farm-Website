@@ -20,7 +20,7 @@ function displayCart() {
         totalAmount += item.price * item.quantity;
 
         cartContainer.innerHTML += `
-            <div class="cart-item">
+            <div class="cart-item p-3 m-2">
                 <img src="${item.image}" alt="">
                 
                 <div style="flex-grow:1">
@@ -30,7 +30,7 @@ function displayCart() {
 
                 <div>
                     <button class="qty-btn" onclick="decreaseQty(${item.id})">−</button>
-                    <span>${item.quantity}</span>
+                    <span class="fw-bold m-3">${item.quantity}</span>
                     <button class="qty-btn" onclick="increaseQty(${item.id})">+</button>
                 </div>
 

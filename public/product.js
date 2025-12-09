@@ -2,7 +2,7 @@ let products = [
 {
     id: 0,
     image: 'images/1.jpg',
-    name:'Riped Banana',
+    name:'Ripe Banana',
     price:"3500"
 },
 {
@@ -90,14 +90,125 @@ let products = [
     price:"100000"
 },
 {
-    id: 14,
+    id: 15,
+    image: 'images/potato33.jpg',
+    name:'Potato Chips',
+    price:"3000"
+},
+{
+    id: 16,
+    image: 'images/rice1.jpg',
+    name:'Original Rice',
+    price:"80000"
+},
+{
+    id: 17,
+    image: 'images/rice2.jpg',
+    name:'Bag of Rice',
+    price:"85000"
+},
+{
+    id: 18,
     image: 'images/17.jpg',
     name:'Palm Kernel seed',
     price:"150000"
-}
-
-
-
+},
+{
+    id: 19,
+    image: 'images/roasted.jpg',
+    name:'Roasted Corn/big pack',
+    price:"3000"
+},
+{
+    id: 20,
+    image: 'images/semo.jpg',
+    name:'Semovita',
+    price:"10000"
+},
+{
+    id: 21,
+    image: 'images/sisi1.jpg',
+    name:'Sisi Pelebe',
+    price:"2000"
+},
+{
+    id: 22,
+    image: 'images/sisi2.jpg',
+    name:'Sisi Pelebe/big pack',
+    price:"2500"
+},
+{
+    id: 23,
+    image: 'images/rice4.jpg',
+    name:'Bag of Rice',
+    price:"75000"
+},
+{
+    id: 24,
+    image: 'images/plantain22.jpg',
+    name:'Plantain Chips',
+    price:"5000"
+},
+{
+    id: 25,
+    image: 'images/plantain33.jpg',
+    name:'Plantain Chips',
+    price:"4000"
+},
+{
+    id: 26,
+    image: 'images/kuli.jpg',
+    name:'Kuli Kuli/big pack',
+    price:"2500"
+},
+{
+    id: 27,
+    image: 'images/kokoro.jpeg',
+    name:'Kokoro(Corn Stick)',
+    price:"3000"
+},
+{
+    id: 28,
+    image: 'images/eggs.jpg',
+    name:'Crate of Eggs',
+    price:"5000"
+},
+{
+    id: 29,
+    image: 'images/dodo.jpg',
+    name:'fried dodo/big pack',
+    price:"3000"
+},
+{
+    id: 29,
+    image: 'images/dodo.jpg',
+    name:'fried dodo',
+    price:"3500"
+},
+{
+    id: 30,
+    image: 'images/beans1.jpg',
+    name:'Beans(Ewa Oloyin)',
+    price:"50000"
+},
+{
+    id: 30,
+    image: 'images/beans1.jpg',
+    name:'Beans/1 bag',
+    price:"45000"
+},
+{
+    id: 31,
+    image: 'images/banana33.jpg',
+    name:'ripe Banana',
+    price:"10000"
+},
+{
+    id: 22,
+    image: 'images/sisi2.jpg',
+    name:'Sisi Pelebe/big pack',
+    price:"2500"
+},
 
 
 
